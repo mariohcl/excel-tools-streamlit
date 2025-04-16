@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 st.set_page_config(page_title="Herramientas Excel", layout="centered")
-st.title("🔧 Herramientas para Excel con Emails")
+st.title("🔧 Limpieza de BBDD")
 
 opcion = st.radio("Selecciona una funcionalidad:", [
     "📊 Comparar dos archivos Excel por email",
