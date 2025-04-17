@@ -13,8 +13,8 @@ opcion = st.radio("Selecciona una funcionalidad:", [
 
 if opcion == "📊 Comparar dos archivos Excel por email":
     st.subheader("📁 Subir los archivos")
-    archivo1 = st.file_uploader("Archivo 1 (columna 'Email')", type=["xlsx"], key="file1")
-    archivo2 = st.file_uploader("Archivo 2 (columna 'E-mail')", type=["xlsx"], key="file2")
+    archivo1 = st.file_uploader("Archivo 1 a comparar (Debe tener la columna llamada 'Email')", type=["xlsx"], key="file1")
+    archivo2 = st.file_uploader("Archivo 2 nuestra base (Debe tener la columna llamada 'E-mail')", type=["xlsx"], key="file2")
 
     if archivo1 and archivo2:
         df1 = pd.read_excel(archivo1)
